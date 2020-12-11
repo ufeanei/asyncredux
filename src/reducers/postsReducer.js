@@ -1,6 +1,6 @@
 
 
-export default (state=[], action)=>{
+const postReducer = (state=[], action)=>{
 
     switch(action.type){
         case 'FETCH_POSTS':
@@ -11,3 +11,6 @@ export default (state=[], action)=>{
     }
     
 }
+
+
+export default postReducer
