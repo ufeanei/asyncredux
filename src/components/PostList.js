@@ -6,7 +6,7 @@ import {fetchPosts} from '../actions';
 class PostList extends Component {
 
     componentDidMount(){
-        this.props.fectPosts()
+        this.props.fetchPosts()
     }
 
     render (){
@@ -17,6 +17,7 @@ class PostList extends Component {
 }
 
 const mapStateToProps = (state)=> {
+    console.log(state)
     return{
         posts:state.posts
     }

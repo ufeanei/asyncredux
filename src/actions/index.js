@@ -1,6 +1,6 @@
 import jsonplaceholder from '../apis/jsonplaceholder';
 
-export const fetcPosts = async() => {
+export const fetchPosts = async() => {
     return async (dispatch)=>{ // getState attribute is not being used
         const response= await jsonplaceholder.get('/posts')
         dispatch({
